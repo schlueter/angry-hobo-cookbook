@@ -3,9 +3,7 @@ description 'Jumpstart a MEAN server with Vagrant!'
 license 'MIT'
 version 0.0.1
 
-['nodejs'].each do |cookbook|
-    depends cookbook
-end
+depends 'nodejs'
 
 %w{
     ubuntu
